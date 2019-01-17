@@ -154,7 +154,7 @@ $view['slots']->set(
                     <input onclick="this.setSelectionRange(0, this.value.length);" type="text" class="form-control" readonly value="&lt;script src=&quot;<?php echo $view['router']->url(
                         'mautic_focus_generate',
                         ['id' => $item->getId()],
-                        true
+                        self::ABSOLUTE_PATH
                     ); ?>&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; async=&quot;async&quot;&gt;&lt;/script&gt;"/>
                 </div>
             </div>

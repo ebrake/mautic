@@ -66,7 +66,7 @@ $props = $focus['properties'];
         <img src="<?php echo $view['router']->url(
             'mautic_focus_pixel',
             ['id' => $focus['id']],
-            true
+            self::ABSOLUTE_PATH
         ); ?>" alt="Mautic Focus" style="display: none;"/>
     <?php endif; ?>
 </div>

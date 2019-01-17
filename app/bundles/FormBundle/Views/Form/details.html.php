@@ -326,7 +326,7 @@ $showActions = count($activeFormActions);
                     <textarea class="form-control" readonly onclick="this.setSelectionRange(0, this.value.length);">&lt;script type="text/javascript" src="<?php echo $view['router']->url(
                             'mautic_form_generateform',
                             ['id' => $activeForm->getId()],
-                            true
+                            self::ABSOLUTE_PATH
                         ); ?>"&gt;&lt;/script&gt;</textarea>
                     <h3 class="pt-lg"><?php echo $view['translator']->trans(
                             'mautic.form.form.help.automaticcopy.iframe'
@@ -334,7 +334,7 @@ $showActions = count($activeFormActions);
                     <textarea class="form-control" readonly onclick="this.setSelectionRange(0, this.value.length);">&lt;iframe src="<?php echo $view['router']->url(
                             'mautic_form_preview',
                             ['id' => $activeForm->getId()],
-                            true
+                            self::ABSOLUTE_PATH
                         ); ?>" width="300" height="300"&gt;&lt;p&gt;Your browser does not support iframes.&lt;/p&gt;&lt;/iframe&gt;</textarea>
                     <i><?php echo $view['translator']->trans('mautic.form.form.help.automaticcopy.iframe.note'); ?></i>
                 </div>
